@@ -100,3 +100,36 @@ p[class|="test"]{
 	width: 200px;
 	background: radial-gradient(circle, rgba(255,255,0)20%, rgba(255,20,147)75%); 
 }
+/* ------------------------------------------- */
+/* example of relative units that manipulates size dynamically */
+#unit-em{
+	height: 5em;
+	width: 5em;
+	background-color: purple;
+}
+#unit-percent{
+	height: 80px;
+	width: 8%;
+	background-color: yellow;
+}
+#unit-viewport{
+	height: 10vh;
+	width: 6.5vw;
+	background-color: lightblue;
+}
+
+#text-manipulation{
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: center;
+}
+#font-manipulation{
+	color: hotpink;
+	font-size: 5em;
+	font-weight: 100;
+	font-family: "Comic Sans MS", "Times New Roman";
+}
+.italics{
+	font-style: oblique;
+	font-family: 'ABeeZee', sans-serif;
+}
