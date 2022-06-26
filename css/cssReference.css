@@ -2,9 +2,12 @@
    the priority goes as follows: id > class > element
    usually use class for multiple uses and id for a single item */
 body{
-	background: lightgray;
+	/*
+	background: lightgray;*/
+	background-image: url("../images/chick_background.webp");
+	background-size: contain;
+	/*background-size: cover;*/
 }
-
 .classSelector{
 	color: blue;
 }
@@ -70,3 +73,30 @@ p[class|="test"]{
 	background: yellow;
 }
 /* ------------------------------------------- */
+/* resources for color */
+#colorProperty{
+	color: rgba(255,20,147, 0.5);/* a value goes from 0.0 to 1.0 8*/
+}
+#colorProperty2{
+	color: #FF1493;
+}
+/* ------------------------------------------- */
+#divGradient{
+	height: 200px;
+	width: 200px;
+	background: linear-gradient(to right, rgba(255,255,0), rgba(255,20,147));
+	
+	background-size: cover;
+}
+#divGradient2{
+	height: 200px;
+	width: 200px;
+	background: linear-gradient(-90deg, rgba(255,255,0), rgba(255,20,147));
+	/* also note can go negative degrees to go ccw */	
+	background-size: cover;
+}
+#divGradient3{
+	height: 200px;
+	width: 200px;
+	background: radial-gradient(circle, rgba(255,255,0)20%, rgba(255,20,147)75%); 
+}
