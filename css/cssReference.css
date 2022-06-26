@@ -1,0 +1,72 @@
+/* example of three different types of selectors 
+   the priority goes as follows: id > class > element
+   usually use class for multiple uses and id for a single item */
+body{
+	background: lightgray;
+}
+
+.classSelector{
+	color: blue;
+}
+
+#idSelector{
+	color: red;
+}
+
+/* ------------------------------------------- */
+/* pseudo selector is defined as a colon and then the pseudoselector 
+ * these are just basic pseudo selectors.  Just google the rest*/
+#pseudoSelector:link{
+	color: blue;
+}
+
+#pseudoSelector:visited{
+	color: purple;
+}
+
+#pseudoHover:hover{
+	color: yellow;
+}
+/* ------------------------------------------- */
+h2 + p{
+	color: orange;
+}
+
+/* selects the specified element that is a sibling of the same parent */
+h2 ~ table{
+	color: green;
+}
+
+/* what happens is that the descendent selector overwrites the 
+ * child selector because the descendent selector selects all the 
+ * children under the parent */
+ol > li{
+	color: coral;
+}
+/* descendent selector */
+ul li{
+	color: teal;
+}
+/* ------------------------------------------- */
+/* for every src atttribute that starts or contains the value */
+img[src^="images/"]{
+	border: 5px solid black;
+}
+/* & every attribute ends with */
+img[height$="00"]{
+	border: 5px solid red;
+}
+/* * every attribute that contains */
+img[src*="cat"]{
+	border: 5px dotted black;
+}
+/* selector that contains the specification */
+p[class~="test1"]{
+	background: pink;
+}
+/* selector that selects the value if it is equal to
+ * or starts and ends with a -*/
+p[class|="test"]{
+	background: yellow;
+}
+/* ------------------------------------------- */
