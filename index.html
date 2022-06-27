@@ -65,19 +65,31 @@
 
 		<img src="images/pikachu.jpg" id="boxLayout"/>
 		<h2 id="float">Example of using float</h2>
-		<p id="display">putting some random text for making the image float right and what happens is the content is floated in the designated direction and the content below it will fill into the spot where the item was originally</p>
+		<p id="display">putting some random text for making the image float right and what happens is the content is floated in the designated direction and the content below it will fill into the spot where the item was originally</p><hr/>
 		
 		<div class="flex-container">
-			<div class="flex-item" style="order: 1; flex-grow: 1; flex-shrink: 1; flex-basis: 50px;">A</div>
+			<div class="flex-item" style="order: 1; flex-grow: 1; flex-shrink: 1; flex-basis: 50px; align-self: flex-start">A</div>
 			<div class="flex-item" style="order: 2; flex-grow: 1; flex-shrink: 1; flex-basis: 50px;">B</div>
 			<div class="flex-item" style="order: 3; flex-grow: 1; flex-shrink: 1; flex-basis: 50px;">C</div>
 			<div class="flex-item" style="order: 4; flex-grow: 1; flex-shrink: 3; flex-basis: 50px;">D</div>
 			<div class="flex-item" style="order: 5; flex-grow: 5; flex-shrink: 0; flex-basis: 50px;">E</div>
 			<div class="flex-item" style="order: 7; flex-grow: 1; flex-shrink: 1; flex-basis: 50px;">F</div>
-			<div class="flex-item" style="order: 6; flex-grow: 1; flex-shrink: 1; flex-basis: 50px;">G</div>
+			<div class="flex-item" style="order: 6; flex-grow: 1; flex-shrink: 1; flex-basis: 50px; align-self: flex-end">G</div>
 			<div class="flex-item" style="order: 8; flex-grow: 1; flex-shrink: 1; flex-basis: 50px;">H</div>
-			<div class="flex-item" style="order: 10; flex-grow: 1; flex-shrink: 1; flex-basis: 50px;">I</div>
-			<div class="flex-item" style="order: 9; flex-grow: 1; flex-shrink: 1; flex-basis: 50px;">J</div>
-		</div>
+			<div class="flex-item" style="order: 10; flex-grow: 1; flex-shrink: 1; flex-basis: 50px; align-self: flex-start">I</div>
+			<div class="flex-item" style="order: 9; flex: 1 1 50px;">J</div>
+		</div><hr/>
+		
+		<div class="grid-container">
+			<div class ="grid-item" style="background: rgb(255, 150, 150); grid-area: 2 / 1 / span 2 / span 3;">1</div>
+			<div class ="grid-item" style="background: rgb(170, 255, 140)">2</div>
+			<div class ="grid-item" style="background: rgb(222, 132, 255)">3</div>
+			<div class ="grid-item" style="background: rgb(255, 207, 119)">4</div>
+			<div class ="grid-item" style="background: rgb(140, 210, 255)">5</div>
+			<div class ="grid-item" style="background: rgb(255, 203, 99)">6</div>
+		</div><hr/>
+
+		<input class="submitBtn" type="submit"/>
+		
 	</body>
 </html>
